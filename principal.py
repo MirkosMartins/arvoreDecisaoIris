@@ -24,6 +24,9 @@ predicoes = floresta.predict(features_teste)
 
 
 st.title('Aplicativo de IA')
-nome = st.text_input('Digite o seu nome:')
+SepalLengthCm = st.number_input('Digite o comprimento do caule')
+SepalWidthCm = st.number_input('Digite a largura do caule')
+PetalLengthCm = st.number_input('Digite o comprimento da petala')
+PetalWidthCm = st.number_input('Digite a largura da petala')
 if st.button('Clique aqui'):
-  st.write('Bem vindo(a)',nome,'ao seu primeiro aplicativo')
+  st.write('Bem vindo(a) ao seu primeiro aplicativo')
